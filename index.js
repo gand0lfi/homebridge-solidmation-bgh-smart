@@ -60,7 +60,7 @@ function BghSmart(log, config) {
   //Characteristic.TemperatureDisplayUnits.FAHRENHEIT = 1;
   this.temperatureDisplayUnits = Characteristic.TemperatureDisplayUnits.CELSIUS;
 
-  this.temperature = 19;
+  this.temperature = 20;
   this.relativeHumidity = 0.50;
 
 
@@ -70,7 +70,7 @@ function BghSmart(log, config) {
   //Characteristic.CurrentHeatingCoolingState.COOL = 2;
   this.heatingCoolingState = Characteristic.CurrentHeatingCoolingState.OFF;
 
-  this.targetTemperature = 21;
+  this.targetTemperature = 24;
   this.targetRelativeHumidity = 0.50;
 
   this.heatingThresholdTemperature = 25;
@@ -94,7 +94,7 @@ BghSmart.prototype = {
   },
   // Required
   getCurrentHeatingCoolingState: function(callback) {
-    this.log("getCurrentHeatingCoolingState from:", this.apiroute+"/status");
+    this.log("getCurrentHeatingCoolingState from:", this.heatingCoolingState+"/status");
 
     var MODE = lib.MODE
 
@@ -165,7 +165,7 @@ BghSmart.prototype = {
 
   },
   getCurrentTemperature: function(callback) {
-    this.log("getCurrentTemperature from:", this.apiroute+"/status");
+    this.log("getCurrentTemperature from:", this.currentTemperature+"/status");
 
     this.device.getStatus()
       .then(status => {
@@ -177,7 +177,7 @@ BghSmart.prototype = {
       })
   },
   getTargetTemperature: function(callback) {
-    this.log("getTargetTemperature from:", this.apiroute+"/status");
+    this.log("getTargetTemperature from:", this.targetTemperature+"/status");
 
     this.device.getStatus()
       .then(status => {
