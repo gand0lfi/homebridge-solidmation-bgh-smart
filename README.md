@@ -4,7 +4,7 @@ A [Homebridge](https://github.com/nfarina/homebridge) plugin for "BGH Smart Cont
 
 Instead of using BGH's own api, I prefer to use solidmation's since it allows to match not only the AC controllers but many other devices from the same app. That's the main diference on this plugin and https://github.com/sbehrends/homebridge-bgh-smart
 
-It's supposed to be used with https://github.com/gand0lfi/homebridge-solidmation-switch at least unti lI get enough time to make only one plugin with all the accesories.
+It's supposed to be used with https://github.com/gand0lfi/homebridge-solidmation-switch at least until I get enough time to make only one plugin with all the accesories.
 
 It uses https://myhabeetatcloud-services.solidmation.com/1.0 API to interact with your registered devices
 
