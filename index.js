@@ -24,7 +24,7 @@ module.exports = function(homebridge){
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
 
-  homebridge.registerAccessory("homebridge-solidmation-bgh-smart", "Soldimation-Smart", SolidmationSmart);
+  homebridge.registerAccessory("homebridge-solidmation-bgh-smart", "Solidmation-Smart", SolidmationSmart);
 };
 
 
