@@ -3,7 +3,7 @@
   "keywords": [
     "homebridge-plugin"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Solidmation - BGH Smart Control plugin for homebridge",
   "main": "index.js",
   "author": "Sergio Behrends <sergio@behrends.com.ar>",
