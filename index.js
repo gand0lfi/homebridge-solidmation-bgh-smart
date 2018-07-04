@@ -2,7 +2,7 @@
 {
     "accessories": [
       {
-        "accessory": "BGH-Smart",
+        "accessory": "Solidmation-Smart",
         "name": "Accesory Name",
         "email": "email@domain.com",
         "password": "password",
@@ -24,11 +24,12 @@ module.exports = function(homebridge){
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
 
-  homebridge.registerAccessory("homebridge-bgh-smart", "BGH-Smart", BghSmart);
+  homebridge.registerAccessory("homebridge-solidmation-bgh-smart", "Soldimation-Smart", SolidmationSmart);
 };
 
 
-function BghSmart(log, config) {
+
+function SolidmationSmart(log, config) {
   this.log = log;
 
   this.name = config.name;
@@ -84,7 +85,7 @@ function BghSmart(log, config) {
   this.targetHeatingCoolingState = Characteristic.TargetHeatingCoolingState.OFF;
 }
 
-BghSmart.prototype = {
+SolidmationSmart.prototype = {
 
   //Start
   identify: function(callback) {

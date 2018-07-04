@@ -18,7 +18,7 @@ Add to your configuration
 
 ```
 {
-  "accessory": "BGH-Smart",
+  "accessory": "Solidmation-Smart",
   "name": "Accesory Name",
   "email": "email@domain.com",
   "password": "password",
